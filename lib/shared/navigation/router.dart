@@ -29,7 +29,7 @@ class Routes {
   }
 
   static final List<Route> routes = [
-    Route(path: "/", page: () => const HomeScreen()),
+    Route(path: "/", page: () => HomeScreen()),
     Route(path: "/wineries", page: () => const WineriesScreen()),
     Route(path: "/routes", page: () => const RoutesScreen()),
     Route(path: "/more_info", page: () => const MoreInfoScreen()),
