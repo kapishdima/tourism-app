@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sea_of_wine_app/modes/way/way.dart';
-import 'package:sea_of_wine_app/shared/way_card.dart';
+import 'package:sea_of_wine_app/shared/cards/way_card.dart';
 
 class WayList extends StatelessWidget {
   final List<Way> ways;

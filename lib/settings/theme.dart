@@ -22,11 +22,16 @@ class AppTheme {
         fontWeight: FontWeight.w500, 
         fontSize: 20 
       ),
+      headline6: TextStyle(
+        fontFamily: "NotoSansDisplay",
+        fontSize: 14,
+        fontWeight: FontWeight.w400
+      ),
       bodyText1: TextStyle(
         fontFamily: "NotoSansDisplay",
         fontSize: 14,
         fontWeight: FontWeight.w400
-      )
+      ),
     ),
   );
 }

@@ -1,12 +1,15 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sea_of_wine_app/api/ways/ways_api.dart';
 import 'package:sea_of_wine_app/modes/way/way.dart';
 import 'package:sea_of_wine_app/settings/constans.dart';
 import 'package:sea_of_wine_app/settings/theme.dart';
-import 'package:sea_of_wine_app/shared/layout.dart';
+import 'package:sea_of_wine_app/shared/image_slider.dart';
+import 'package:sea_of_wine_app/shared/layouts/layout.dart';
 import 'package:sea_of_wine_app/shared/map/map.dart';
-import 'package:sea_of_wine_app/shared/page_headline.dart';
+import 'package:sea_of_wine_app/shared/texts/page_headline.dart';
 import 'package:sea_of_wine_app/shared/ways_list.dart';
 import 'package:sea_of_wine_app/store/filters_store.dart';
 
@@ -89,7 +92,18 @@ class _CountryScreenState extends State<CountryScreen> {
                     ),
                   )
                 ],
-              ))
+              )),
+          const Padding(
+            padding: EdgeInsets.only(left: 30, top: 30),
+            child: ImageSlider(
+              images: [
+                "assets/images/image-slide.png",
+                "assets/images/image-slide.png",
+                "assets/images/image-slide.png",
+                "assets/images/image-slide.png",
+              ],
+            ),
+          )
         ]),
       )),
     );

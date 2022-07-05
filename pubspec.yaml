@@ -44,6 +44,7 @@ dependencies:
   mobx: ^2.0.7+2
   flutter_mobx: ^2.0.6+1
   provider: ^6.0.3
+  url_launcher: ^6.1.4
 
 dev_dependencies:
   flutter_test:
@@ -74,6 +75,10 @@ flutter:
     - assets/icons/
     - assets/icons/locations/
     - assets/images/
+    - assets/images/partners/
+    - assets/images/more_info/
+    - assets/images/countries/
+    - assets/logo.svg
     - assets/map_styles.json
 
   # An image asset can refer to one or more resolution-specific "variants", see

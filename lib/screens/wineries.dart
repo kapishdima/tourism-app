@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sea_of_wine_app/shared/layout.dart';
+import 'package:sea_of_wine_app/shared/layouts/layout.dart';
 
 class WineriesScreen extends StatelessWidget {
   const WineriesScreen({ Key? key }) : super(key: key);

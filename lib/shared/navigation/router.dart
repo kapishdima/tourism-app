@@ -6,6 +6,7 @@ import 'package:sea_of_wine_app/screens/home.dart';
 import 'package:sea_of_wine_app/screens/wineries.dart';
 import 'package:sea_of_wine_app/screens/more_info.dart';
 import 'package:sea_of_wine_app/screens/routes.dart';
+import 'package:sea_of_wine_app/screens/winery.dart';
 import 'package:sea_of_wine_app/settings/constans.dart';
 
 class Route {
@@ -32,8 +33,9 @@ class Routes {
     Route(path: "/", page: () => HomeScreen()),
     Route(path: "/wineries", page: () => const WineriesScreen()),
     Route(path: "/routes", page: () => const RoutesScreen()),
-    Route(path: "/more_info", page: () => const MoreInfoScreen()),
+    Route(path: "/more_info", page: () => MoreInfoScreen()),
     Route(path: "/country", page: () => const CountryScreen()),
+    Route(path: "/winery", page: () => WineryScreen()),
   ];
 
   static final List<BottomMenuItem> bottomNavigationRoutes = [
@@ -45,7 +47,7 @@ class Routes {
             ),
         label: "Main"),
     BottomMenuItem(
-        path: "/wineries",
+        path: "/winery", // /wineries
         icon: (bool isActive) => SvgPicture.asset(
             "assets/icons/wineries_icon.svg",
             color: isActive ? AppColors.bordo : AppColors.dark),
