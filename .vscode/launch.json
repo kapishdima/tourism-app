@@ -5,10 +5,18 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "sea_of_wine_app",
+      "name": "sea_of_wine_app(iphone)",
       "request": "launch",
       "type": "dart",
-      "program": "lib/main.dart"
+      "program": "lib/main.dart",
+      "deviceId": "iphone"
+    },
+    {
+      "name": "sea_of_wine_app(android)",
+      "request": "launch",
+      "type": "dart",
+      "program": "lib/main.dart",
+      "deviceId": "M2103K19G"
     },
     {
       "name": "sea_of_wine_app (profile mode)",

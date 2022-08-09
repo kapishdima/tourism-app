@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:sea_of_wine_app/settings/constans.dart';
 
 class ImageSlider extends StatelessWidget {
   final List<String> images;
@@ -7,25 +8,44 @@ class ImageSlider extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
-        children: images.map((image) {
-          return Row(
-            children: [
-              Container(
-                width: 220,
-                height: 325,
-                clipBehavior: Clip.hardEdge,
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    image: DecorationImage(
-                        image: AssetImage(image), fit: BoxFit.cover)),
-              ),
-              const SizedBox(width: 10)
-            ],
-          );
-        }).toList(),
+    return SizedBox(
+      height: 325,
+      child: Padding(
+        padding: const EdgeInsets.only(
+          left: AppSizes.defaulPadding,
+          top: AppSizes.defaulPadding,
+        ),
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+            children: images
+                .map(
+                  (image) => Row(
+                    children: [
+                      buildItem(image),
+                      const SizedBox(
+                        width: 10,
+                      )
+                    ],
+                  ),
+                )
+                .toList(),
+          ),
+        ),
+      ),
+    );
+  }
+
+  SizedBox buildItem(String image) {
+    return SizedBox(
+      width: 220,
+      height: 325,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(15),
+        child: Image(
+          image: NetworkImage(image),
+          fit: BoxFit.cover,
+        ),
       ),
     );
   }

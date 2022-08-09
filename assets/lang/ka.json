@@ -1,0 +1,51 @@
+{
+  "home_screen_title": "ღვინის მარშრუტები \nმოგზაურებისთვის",
+  "blacksea_screen_title": "შავი ზღვის ღვინის მარშრუტი",
+  "wineries_screen_title": "ღვინის ქარხნები",
+  "routes_screen_title": "მარშრუტები",
+  "more_info_title": "Მეტი ინფორმაცია",
+  "reviews_screen_title": "მიმოხილვები",
+
+  "events_card_title": "Ივენთი",
+  "agencies_card_title": "ტურისტული სააგენტოები",
+  "grape_card_title": "ყურძნის ჯიშები",
+  "blog_card_title": "ბლოგი",
+
+  "more_details": "Უფრო ვრცლად",
+  "reviews": "მიმოხილვები",
+  "sort_by_rating": "რეიტინგი",
+  "sort_by_alphabet": "ანბანის თანმიმდევრობა",
+  "sort_by_gps": "GPS",
+  "login_title": "შედით, რომ დატოვოთ მიმოხილვა",
+  "login_or": "ან",
+  "show_all_reviews": "ყველა მიმოხილვის ჩვენება",
+  "filtres_title": "ფილტრები",
+  "hashtags_title": "ჰეშთეგები",
+  "tags_title": "ინტერესი",
+  "regions_title": "რეგიონები",
+  "additional_info_title": "Დამატებითი ინფორმაცია",
+  "implemented_text": " მიერ განხორციელებული",
+
+  "facebook_button_text": "განაგრძეთ Facebook-თან ერთად",
+  "google_button_text": "განაგრძეთ Google-ით",
+  "map_button_text": "რუკა",
+  "show_more_text": "მეტის ჩვენება",
+  "show_less_text": "ნაკლების ჩვენება",
+
+  "filters_winery": "მეღვინეობა",
+  "filters_attraction": "Ტურისტული ატრაქციონები",
+  "filters_restaurants": "რესტორნები",
+  "filters_hotels": "სასტუმროები",
+  "filters_wine_bars": "ბარები/კაფეები",
+
+  "navigation_home": "მთავარი",
+  "navigation_wineries": "ღვინის ქარხნები",
+  "navigation_routes": "მარშრუტები",
+  "navigation_more_info": "Მეტი",
+
+  "home_text": "პროექტი შავი ზღვის აუზის 2014-2020 წლების ერთობლივი ოპერატიული პროგრამის ფარგლებში განხორციელდება. ევროპის სამეზობლო ინსტრუმენტი ერთობლივ ტექნიკურ სამდივნოსთან მჭიდრო თანამშრომლობით.",
+  "home_title": "ამ 26 თვიან პროექტს ერთობლივად ახორციელებენ:",
+
+  "footer_text": "ეს ვებგვერდი/პლატფორმა შეიქმნა და შენარჩუნებულია ევროკავშირის ფინანსური მხარდაჭერით. მის შინაარსზე პასუხისმგებელია და აუცილებლად არ ასახავს ევროკავშირის შეხედულებებს",
+  "footer_privacy_link": "Კონფიდენციალურობის პოლიტიკა"
+}

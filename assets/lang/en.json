@@ -1,0 +1,51 @@
+{
+  "home_screen_title": "Wine routes \nfor travellers",
+  "blacksea_screen_title": "Black sea wine route",
+  "wineries_screen_title": "Wineries of",
+  "routes_screen_title": "Routes of",
+  "more_info_title": "More info",
+  "reviews_screen_title": "Reviews",
+
+  "events_card_title": "Events",
+  "agencies_card_title": "Travel agencies",
+  "grape_card_title": "Grape varieties",
+  "blog_card_title": "Blog",
+
+  "more_details": "More details",
+  "reviews": "reviews",
+  "sort_by_rating": "Rating",
+  "sort_by_alphabet": "Alphabet order",
+  "sort_by_gps": "GPS",
+  "login_title": "Log in to leave a review",
+  "login_or": "or",
+  "show_all_reviews": "Show all reviews",
+  "filtres_title": "Filters",
+  "hashtags_title": "Hashtags",
+  "tags_title": "Interest",
+  "regions_title": "Regions",
+  "additional_info_title": "Additional information",
+  "implemented_text": " implemented by:",
+
+  "filters_winery": "Winery",
+  "filters_attraction": "Tourist attractions",
+  "filters_restaurants": "Restaurants",
+  "filters_hotels": "Аccommodation",
+  "filters_wine_bars": "Wine bars/cafes",
+
+  "facebook_button_text": "Continue with Facebook",
+  "google_button_text": "Continue with Google",
+  "map_button_text": "Map",
+  "show_more_text": "Show more",
+  "show_less_text": "Show less",
+
+  "navigation_home": "Main",
+  "navigation_wineries": "Wineries",
+  "navigation_routes": "Routes",
+  "navigation_more_info": "More info",
+
+  "home_text": "The project will take place within the framework of the Joint Operational Program for the Black Sea Basin for 2014-2020. European Neighborhood Instrument in close cooperation with the Joint Technical Secretariat.",
+  "home_title": "This 26-month project is jointly implemented by:",
+
+  "footer_text": "This website/platform was created and maintained with the financial support of the European Union. Its contents are the sole responsibility of and do not necessarily reflect the views of the European Union",
+  "footer_privacy_link": "Privacy policy"
+}

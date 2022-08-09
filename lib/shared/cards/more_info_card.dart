@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:sea_of_wine_app/settings/constans.dart';
-import 'package:sea_of_wine_app/settings/theme.dart';
+import 'package:sea_of_wine_app/settings/colors.dart';
+import 'package:sea_of_wine_app/settings/text_styles.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MoreInfoCard extends StatelessWidget {
@@ -36,10 +36,12 @@ class MoreInfoCard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  name,
-                  style: AppTheme.ligthTheme.textTheme.headline2!
-                      .copyWith(color: AppColors.white),
+                Expanded(
+                  child: Text(
+                    name,
+                    style: AppTextsStyles.headline2
+                        .copyWith(color: AppColors.white),
+                  ),
                 ),
                 SvgPicture.asset("assets/icons/arrow-up-right.svg")
               ],

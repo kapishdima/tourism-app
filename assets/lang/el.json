@@ -1,0 +1,51 @@
+{
+  "home_screen_title": "Διαδρομές κρασιού \nια ταξιδιώτες",
+  "blacksea_screen_title": "Διαδρομή μαύρης θάλασσας κρασιού",
+  "wineries_screen_title": "Οινοποιεία των",
+  "routes_screen_title": "Διαδρομές του",
+  "more_info_title": "Περισσότερες πληροφορίες",
+  "reviews_screen_title": "Κριτικές",
+
+  "events_card_title": "Εκδηλώσεις",
+  "agencies_card_title": "Ταξιδιωτικά γραφεία",
+  "grape_card_title": "Ποικιλίες σταφυλιού",
+  "blog_card_title": "Ιστολόγιο",
+
+  "more_details": "Περισσότερες λεπτομέρειες",
+  "reviews": "κριτικές",
+  "sort_by_rating": "Εκτίμηση",
+  "sort_by_alphabet": "Σειρά αλφαβήτου",
+  "sort_by_gps": "GPS",
+  "login_title": "Συνδεθείτε για να αφήσετε μια κριτική",
+  "login_or": "ή",
+  "show_all_reviews": "Εμφάνιση όλων των κριτικών",
+  "filtres_title": "Φίλτρα",
+  "hashtags_title": "ετικέτες",
+  "tags_title": "Ενδιαφέρον",
+  "regions_title": "Περιφέρειες",
+  "additional_info_title": "Επιπλέον πληροφορίες",
+  "implemented_text": " υλοποιείται από:",
+
+  "filters_winery": "Οινοποιείο",
+  "filters_attraction": "Τουριστικά αξιοθέατα",
+  "filters_restaurants": "Εστιατόρια",
+  "filters_hotels": "Ξενοδοχεία",
+  "filters_wine_bars": "μπαρ/καφετέριες",
+
+  "facebook_button_text": "Συνεχίστε με το Facebook",
+  "google_button_text": "Συνεχίστε με την Google",
+  "map_button_text": "Χάρτης",
+  "show_more_text": "Δείτε περισσότερα",
+  "show_less_text": "Δείξε λιγότερο",
+
+  "navigation_home": "Κύριος",
+  "navigation_wineries": "Οινοποιεία",
+  "navigation_routes": "Διαδρομές",
+  "navigation_more_info": "Περισσότερες",
+
+  "home_text": "Το έργο θα πραγματοποιηθεί στο πλαίσιο του Κοινού Επιχειρησιακού Προγράμματος για τη Λεκάνη της Μαύρης Θάλασσας για την περίοδο 2014-2020. Ευρωπαϊκό Μέσο Γειτονίας σε στενή συνεργασία με την Κοινή Τεχνική Γραμματεία.",
+  "home_title": "Αυτό το έργο διάρκειας 26 μηνών υλοποιείται από κοινού από:",
+
+  "footer_text": "Αυτή η ιστοσελίδα/πλατφόρμα δημιουργήθηκε και συντηρήθηκε με την οικονομική υποστήριξη της Ευρωπαϊκής Ένωσης. Το περιεχόμενό του αποτελεί αποκλειστική ευθύνη και δεν αντικατοπτρίζει απαραίτητα τις απόψεις της Ευρωπαϊκής Ένωσης",
+  "footer_privacy_link": "Πολιτική απορρήτου"
+}

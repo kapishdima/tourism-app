@@ -15,7 +15,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.0+1
+version: 0.0.1+1
 
 environment:
   sdk: '>=2.17.3 <3.0.0'
@@ -29,6 +29,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
@@ -39,12 +41,15 @@ dependencies:
   flutter_polyline_points: ^1.0.0
   json_annotation: ^4.5.0
   http: ^0.13.4
-  quiver: ^3.1.0
-  get: ^4.6.5
   mobx: ^2.0.7+2
   flutter_mobx: ^2.0.6+1
   provider: ^6.0.3
   url_launcher: ^6.1.4
+  get_it: ^7.2.0
+  shimmer: ^2.0.0
+  webview_flutter: ^3.0.4
+  geolocator: ^9.0.1
+  cached_network_image: ^3.2.1
 
 dev_dependencies:
   flutter_test:
@@ -59,6 +64,22 @@ dev_dependencies:
   build_runner: ^2.1.11
   json_serializable: ^6.2.0
   mobx_codegen: ^2.0.7
+  flutter_launcher_icons: '^0.9.2'
+  flutter_native_splash: ^2.2.7
+
+flutter_icons:
+  android: 'launcher_icon'
+  ios: true
+  image_path_android: 'assets/icon_android.png'
+  image_path_ios: 'assets/icon_ios.png'
+
+flutter_native_splash:
+  background_image: assets/splash.png
+  android_12:
+    image: assets/splash.png
+
+  android: true
+  ios: true
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -74,12 +95,16 @@ flutter:
   assets:
     - assets/icons/
     - assets/icons/locations/
+    - assets/icons/navigations/
+    - assets/icons/countries/
     - assets/images/
     - assets/images/partners/
     - assets/images/more_info/
     - assets/images/countries/
+    - assets/images/black-sea/
     - assets/logo.svg
     - assets/map_styles.json
+    - assets/lang/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

@@ -1,0 +1,51 @@
+{
+  "home_screen_title": "Винні шляхи \nдля мандрівників",
+  "blacksea_screen_title": "Чорноморський винний шлях",
+  "wineries_screen_title": "Виноробні",
+  "routes_screen_title": "Маршрути",
+  "more_info_title": "Більше інформації",
+  "reviews_screen_title": "Відгуки",
+
+  "events_card_title": "Події",
+  "agencies_card_title": "Туристичні агентства",
+  "grape_card_title": "Сорти винограду",
+  "blog_card_title": "Блог",
+
+  "more_details": "Детальніше",
+  "reviews": "відгуки",
+  "sort_by_rating": "Рейтинг",
+  "sort_by_alphabet": "Алфавітний порядок",
+  "sort_by_gps": "GPS",
+  "login_title": "Увійдіть, щоб залишити відгук",
+  "login_or": "або",
+  "show_all_reviews": "Показати всі відгуки",
+  "filtres_title": "Фільтри",
+  "hashtags_title": "Хештеги",
+  "tags_title": "Інтереси",
+  "regions_title": "Регіони",
+  "additional_info_title": "Додаткова інформація",
+  "implemented_text": " реалізовано",
+
+  "filters_winery": "Виноробні",
+  "filters_attraction": "Туристичні пам'ятки",
+  "filters_restaurants": "Ресторани",
+  "filters_hotels": "Готелі",
+  "filters_wine_bars": "Винні бари/кафе",
+
+  "facebook_button_text": "Продовжуйте з Facebook",
+  "google_button_text": "Продовжуйте з Google",
+  "map_button_text": "Карта",
+  "show_more_text": "Показати більше",
+  "show_less_text": "Показати менше",
+
+  "navigation_home": "Головна",
+  "navigation_wineries": "Виноробні",
+  "navigation_routes": "Маршрути",
+  "navigation_more_info": "Більше",
+
+  "home_text": "Проект відбуватиметься в рамках Спільної операційної програми для Чорноморського басейну на 2014-2020 роки. Європейський інструмент сусідства у тісній співпраці зі Спільним технічним секретаріатом.",
+  "home_title": "Цей 26-місячний проект реалізують спільно:",
+
+  "footer_text": "Цей веб-сайт/платформа створено та підтримується за фінансової підтримки Європейського Союзу. Його зміст є виключною відповідальністю та не обов’язково відображає погляди Європейського Союзу",
+  "footer_privacy_link": "Політика конфіденційності"
+}

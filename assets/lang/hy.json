@@ -1,0 +1,51 @@
+{
+  "home_screen_title": "Գինու ճանապարհներ \nճանապարհորդների համար",
+  "blacksea_screen_title": "Սև ծովի գինու երթուղի",
+  "wineries_screen_title": "-ի գինեգործարաններ",
+  "routes_screen_title": "-ի երթուղիներ",
+  "more_info_title": "Լրացուցիչ տեղեկություններ",
+  "reviews_screen_title": "Կարծիքներ",
+
+  "events_card_title": "Իրադարձություններ",
+  "agencies_card_title": "Տուրիստական ​​գործակալություններ",
+  "grape_card_title": "Խաղողի սորտեր",
+  "blog_card_title": "Բլոգ",
+
+  "more_details": "Ավելի մանրամասն",
+  "reviews": "ակնարկներ",
+  "sort_by_rating": "Վարկանիշ",
+  "sort_by_alphabet": "Այբուբենի կարգը",
+  "sort_by_gps": "GPS",
+  "login_title": "Մուտք գործեք՝ կարծիք թողնելու համար",
+  "login_or": "կամ",
+  "show_all_reviews": "Ցույց տալ բոլոր ակնարկները",
+  "filtres_title": "Զտիչներ",
+  "hashtags_title": "Հաշթեգներ",
+  "tags_title": "Հետաքրքրություն",
+  "regions_title": "Մարզեր",
+  "additional_info_title": "Լրացուցիչ տեղեկություն",
+  "implemented_text": " կողմից իրականացվող",
+
+  "filters_winery": "Գինու գործարան",
+  "filters_attraction": "Զբոսաշրջային վայրեր",
+  "filters_restaurants": "Ռեստորաններ",
+  "filters_hotels": "Հյուրանոցներ",
+  "filters_wine_bars": "բարեր/սրճարաններ",
+
+  "facebook_button_text": "Շարունակեք Facebook-ով",
+  "google_button_text": "Շարունակեք Google-ի հետ",
+  "map_button_text": "Քարտեզ",
+  "show_more_text": "Ցույց տալ ավելին",
+  "show_less_text": "Ցույց տալ ավելի քիչ",
+
+  "navigation_home": "Հիմնական",
+  "navigation_wineries": "Գինեգործարաններ",
+  "navigation_routes": "Երթուղիներ",
+  "navigation_more_info": "Լրացուցիչ",
+
+  "home_text": "Ծրագիրը տեղի կունենա Սև ծովի ավազանի 2014-2020 թվականների համատեղ գործառնական ծրագրի շրջանակներում։ Եվրոպական հարևանության գործիք՝ համատեղ տեխնիկական քարտուղարության հետ սերտ համագործակցությամբ:",
+  "home_title": "Այս 26-ամսյա ծրագիրը համատեղ իրականացնում են.",
+
+  "footer_text": "Այս կայքը/հարթակը ստեղծվել և պահպանվել է Եվրոպական միության ֆինանսական աջակցությամբ: Դրա բովանդակությունը բացառապես պատասխանատվություն է կրում և պարտադիր չէ, որ արտահայտի Եվրոպական միության տեսակետները",
+  "footer_privacy_link": "Գաղտնիության քաղաքականություն"
+}

@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:sea_of_wine_app/app_localization.dart';
+import 'package:sea_of_wine_app/modules/countries/store/countries_store.dart';
+import 'package:sea_of_wine_app/settings/colors.dart';
 import 'package:sea_of_wine_app/settings/constans.dart';
+import 'package:sea_of_wine_app/settings/text_styles.dart';
+import 'package:sea_of_wine_app/setup.dart';
 import 'package:sea_of_wine_app/shared/cards/more_info_card.dart';
 import 'package:sea_of_wine_app/shared/layouts/layout.dart';
-import 'package:sea_of_wine_app/shared/social_button.dart';
+import 'package:sea_of_wine_app/shared/buttons/social_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MoreInfoItem {
@@ -13,34 +18,51 @@ class MoreInfoItem {
   MoreInfoItem({required this.name, required this.url, required this.image});
 }
 
-class MoreInfoScreen extends StatelessWidget {
-  final List<MoreInfoItem> moreInfoItems = [
-    MoreInfoItem(
-        name: "Events",
-        url: "https://seaofwine.travel/",
-        image: "assets/images/more_info/more_info-0.png"),
-    MoreInfoItem(
-        name: "Travel Agensies",
-        url: "https://seaofwine.travel/",
-        image: "assets/images/more_info/more_info-1.png"),
-    MoreInfoItem(
-        name: "Grape varieties",
-        url: "https://seaofwine.travel/",
-        image: "assets/images/more_info/more_info-2.png"),
-    MoreInfoItem(
-        name: "Blog",
-        url: "https://seaofwine.travel/",
-        image: "assets/images/more_info/more_info-3.png"),
-  ];
+class MoreInfoScreen extends StatefulWidget {
+  const MoreInfoScreen({Key? key}) : super(key: key);
 
-  MoreInfoScreen({Key? key}) : super(key: key);
+  @override
+  State<MoreInfoScreen> createState() => _MoreInfoScreenState();
+}
+
+class _MoreInfoScreenState extends State<MoreInfoScreen> {
+  final CountriesStore countriesStore =
+      appStoresContainer.get<CountriesStore>();
+
+  List<MoreInfoItem> moreInfoItems = [];
+
+  @override
+  void initState() {
+    super.initState();
+
+    moreInfoItems = [
+      MoreInfoItem(
+          name: "events_card_title",
+          url:
+              "${MoreInfoUrls.siteUrl}countries/${countriesStore.currentName}/${MoreInfoUrls.eventsUrl}",
+          image: "assets/images/more_info/more_info-0.png"),
+      MoreInfoItem(
+          name: "agencies_card_title",
+          url:
+              "${MoreInfoUrls.siteUrl}countries/${countriesStore.currentName}/${MoreInfoUrls.agenciesUrl}",
+          image: "assets/images/more_info/more_info-1.png"),
+      MoreInfoItem(
+          name: "grape_card_title",
+          url:
+              "${MoreInfoUrls.siteUrl}countries/${countriesStore.currentName}/${MoreInfoUrls.grapesUrl}",
+          image: "assets/images/more_info/more_info-2.png"),
+      MoreInfoItem(
+          name: "blog_card_title",
+          url: "${MoreInfoUrls.siteUrl}/${MoreInfoUrls.blogUrl}",
+          image: "assets/images/more_info/more_info-3.png"),
+    ];
+  }
 
   @override
   Widget build(BuildContext context) {
     return Layout(
-        title: "More Info",
-        children: Scaffold(
-            body: Padding(
+        title: AppLocalization.of(context).t("more_info_title"),
+        children: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 30),
           child: SingleChildScrollView(
             child: Column(
@@ -48,10 +70,13 @@ class MoreInfoScreen extends StatelessWidget {
                 Wrap(
                   runSpacing: 14,
                   children: moreInfoItems
-                      .map((moreInfoItem) => MoreInfoCard(
-                          name: moreInfoItem.name,
-                          url: moreInfoItem.url,
-                          image: moreInfoItem.image))
+                      .map(
+                        (moreInfoItem) => MoreInfoCard(
+                            name: AppLocalization.of(context)
+                                .t(moreInfoItem.name),
+                            url: moreInfoItem.url,
+                            image: moreInfoItem.image),
+                      )
                       .toList(),
                 ),
                 Padding(
@@ -73,13 +98,10 @@ class MoreInfoScreen extends StatelessWidget {
                           ],
                         ),
                       ),
-                      const Text(
-                        "This website/platform was created and maintained with the financial support of the European Union. Its contents are the sole responsibility of and do not necessarily reflect the views of the European Union",
-                        style: TextStyle(
-                            fontFamily: "NotoSansDisplay",
-                            fontSize: 10,
-                            fontWeight: FontWeight.w300,
-                            color: AppColors.dark),
+                      Text(
+                        AppLocalization.of(context).t("footer_text"),
+                        style: AppTextsStyles.smallTextLight
+                            .copyWith(color: AppColors.dark),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(top: 6),
@@ -89,24 +111,22 @@ class MoreInfoScreen extends StatelessWidget {
                             GestureDetector(
                               onTap: () async {
                                 await launchUrl(
-                                    Uri.parse("https://seaofwine.travel/"),
+                                    Uri.parse("${ApiSettings.baseUrl}privacy"),
                                     mode: LaunchMode.externalApplication);
                               },
-                              child: const Text("Privacy policy",
-                                  style: TextStyle(
-                                      fontFamily: "NotoSansDisplay",
-                                      fontSize: 10,
-                                      fontWeight: FontWeight.w500,
-                                      color: AppColors.dark,
-                                      decoration: TextDecoration.underline)),
+                              child: Text(
+                                  AppLocalization.of(context)
+                                      .t("footer_privacy_link"),
+                                  style: AppTextsStyles.smallTextMedium
+                                      .copyWith(
+                                          color: AppColors.dark,
+                                          decoration:
+                                              TextDecoration.underline)),
                             ),
-                            const Text(
+                            Text(
                               "© 2022",
-                              style: TextStyle(
-                                fontFamily: "NotoSansDisplay",
-                                fontWeight: FontWeight.w300,
-                                color: AppColors.dark,
-                              ),
+                              style: AppTextsStyles.copyrightText
+                                  .copyWith(color: AppColors.dark),
                             )
                           ],
                         ),
@@ -117,6 +137,6 @@ class MoreInfoScreen extends StatelessWidget {
               ],
             ),
           ),
-        )));
+        ));
   }
 }
