@@ -55,7 +55,9 @@ class HomeScreenView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               PageTitle(
-                title: AppLocalization.of(context).t("home_screen_title").toString(),
+                title: AppLocalization.of(context)
+                    .t("home_screen_title")
+                    .toString(),
               ),
               const Padding(
                 padding: EdgeInsets.only(bottom: 15),
@@ -63,7 +65,10 @@ class HomeScreenView extends StatelessWidget {
               ),
               CountriesList(),
               buildPromoText(context),
-              const PartnersList()
+              const PartnersList(),
+              const SizedBox(
+                height: 60,
+              )
             ],
           ),
         ),
@@ -92,8 +97,7 @@ class HomeScreenView extends StatelessWidget {
             ),
           ),
           ParagraphText(
-            text:
-                AppLocalization.of(context).t("home_text"),
+            text: AppLocalization.of(context).t("home_text"),
           )
         ],
       ),

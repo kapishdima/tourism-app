@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:sea_of_wine_app/app_localization.dart';
 import 'package:sea_of_wine_app/settings/colors.dart';
 import 'package:sea_of_wine_app/settings/text_styles.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -50,16 +51,18 @@ class PartnerCard extends StatelessWidget {
                     fit: BoxFit.contain,
                   ),
                 ),
-                url.isNotEmpty ? SvgPicture.asset(
-                  'assets/icons/arrow-up-right.svg',
-                  color: AppColors.dark,
-                  width: 16,
-                ) : Container()
+                url.isNotEmpty
+                    ? SvgPicture.asset(
+                        'assets/icons/arrow-up-right.svg',
+                        color: AppColors.dark,
+                        width: 16,
+                      )
+                    : Container()
               ],
             ),
             Padding(
               padding: const EdgeInsets.only(top: 10),
-              child: Text(name,
+              child: Text(AppLocalization.of(context).t(name),
                   style:
                       AppTextsStyles.paragraph.copyWith(color: AppColors.dark)),
             )

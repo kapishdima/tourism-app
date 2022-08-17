@@ -22,7 +22,7 @@ class _LocalesDropdownState extends State<LocalesDropdown> {
   LocalesStore localesStore = appStoresContainer.get<LocalesStore>();
 
   Offset popupMenuOffset = const Offset(0, 0);
-  double popupMenuWidth = 32;
+  double popupMenuWidth = 60;
 
   @override
   void initState() {
@@ -46,8 +46,10 @@ class _LocalesDropdownState extends State<LocalesDropdown> {
         child: PopupMenuButton(
           elevation: 0,
           offset: popupMenuOffset,
-          constraints:
-              BoxConstraints(maxWidth: popupMenuWidth, minWidth: popupMenuWidth),
+          constraints: BoxConstraints(
+            maxWidth: popupMenuWidth,
+            minWidth: popupMenuWidth,
+          ),
           onSelected: onLocaleChange,
           shape: RoundedRectangleBorder(
             side: const BorderSide(color: AppColors.gray),
@@ -66,15 +68,15 @@ class _LocalesDropdownState extends State<LocalesDropdown> {
     return const Padding(
       padding: EdgeInsets.only(right: AppSizes.defaulPadding),
       child: Center(
-          child: SizedBox(
-            width: 16,
-            height: 16,
-            child: CircularProgressIndicator(
-              color: AppColors.bordo,
-              strokeWidth: 2,
-            ),
+        child: SizedBox(
+          width: 16,
+          height: 16,
+          child: CircularProgressIndicator(
+            color: AppColors.bordo,
+            strokeWidth: 2,
           ),
         ),
+      ),
     );
   }
 
@@ -98,14 +100,17 @@ class _LocalesDropdownState extends State<LocalesDropdown> {
       height: 28,
       padding: const EdgeInsets.all(0),
       value: locale.code,
-      child: Center(
-        child: Text(
-          locale.code.toUpperCase(),
-          style: AppTextsStyles.paragraphMedium.copyWith(
-              color: localesStore.currentLocale == locale.code
-                  ? AppColors.bordo
-                  : AppColors.dark,
-              decoration: TextDecoration.underline),
+      child: SizedBox(
+        width: 60,
+        child: Center(
+          child: Text(
+            locale.code.toUpperCase(),
+            style: AppTextsStyles.paragraphMedium.copyWith(
+                color: localesStore.currentLocale == locale.code
+                    ? AppColors.bordo
+                    : AppColors.dark,
+                decoration: TextDecoration.underline),
+          ),
         ),
       ),
     );

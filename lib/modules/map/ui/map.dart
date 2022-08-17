@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:sea_of_wine_app/modules/map/ui/filters/filter_button.dart';
 import 'package:sea_of_wine_app/modules/map/ui/locations/cards/point_card.dart';
 import 'package:sea_of_wine_app/modules/map/ui/map_provider.dart';
+import 'package:sea_of_wine_app/modules/map/ui/pdf_button.dart';
 
 class MapWidget extends StatelessWidget {
   final bool hasDraggableList;
@@ -25,6 +26,13 @@ class MapWidget extends StatelessWidget {
         children: [
           MapProvider(
             isBlackSeaMap: isBlackSeaMap,
+          ),
+          const Padding(
+            padding: EdgeInsets.only(left: 30),
+            child: Align(
+              alignment: Alignment.topLeft,
+              child: PdfButton(),
+            ),
           ),
           const Padding(
             padding: EdgeInsets.only(right: 30),

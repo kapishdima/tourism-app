@@ -19,11 +19,14 @@ class BlackSeaCard extends StatelessWidget {
         height: 300,
         clipBehavior: Clip.hardEdge,
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 28),
-        decoration: BoxDecoration(
-            image: const DecorationImage(
+        decoration: const BoxDecoration(
+            image: DecorationImage(
                 image: AssetImage('assets/images/black-sea-image.png'),
                 fit: BoxFit.cover),
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(15),
+              bottomRight: Radius.circular(15),
+            ),
             color: AppColors.dark),
         child: buildContent(),
       ),

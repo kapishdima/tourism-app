@@ -16,41 +16,41 @@ class RatingCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GridContainer(
-      child: Container(
-        height: 200,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          color: AppColors.darkBlue,
-        ),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Container(
-              constraints: const BoxConstraints(maxWidth: 170),
-              child: Text(
+    return Expanded(
+      child: GridContainer(
+        child: Container(
+          padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 68),
+          constraints: const BoxConstraints(minHeight: 200),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            color: AppColors.darkBlue,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
                 name,
                 style: AppTextsStyles.headline2Condensed
                     .copyWith(color: AppColors.white),
               ),
-            ),
-            const SizedBox(
-              height: 6,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                SvgPicture.asset("assets/icons/star_icon.svg", width: 55),
-                const SizedBox(width: 16),
-                Text(
-                  rating.toString(),
-                  style: AppTextsStyles.ratingTitle
-                      .copyWith(color: AppColors.white),
-                )
-              ],
-            )
-          ],
+              const SizedBox(
+                height: 6,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  SvgPicture.asset("assets/icons/star_icon.svg", width: 55),
+                  const SizedBox(width: 16),
+                  Text(
+                    rating.toString(),
+                    style: AppTextsStyles.ratingTitle
+                        .copyWith(color: AppColors.white),
+                  )
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );
